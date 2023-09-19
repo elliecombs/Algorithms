@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ButtonClicker</title>
+</head>
+
+<body>
+    <!-- NAV Bar -->
+    <div class="container">
+        <div class="Menu">
+            <div class="navbar">
+
+                <!-- Dojonary container -->
+                <h1 class="navdojonary">Dojonary</h1>
+
+                <!--Search Bar and Login Button  -->
+                <div class="searchbar">
+                    <input type="text" placeholder="Search" class="searchspace"></input>
+                    <button onclick="login(this)" class="btn">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- /* Main*/ -->
+
+        <div class="main">
+
+            <!-- Container Top Left -->
+            <div class="left">
+                <div class="ninja1">
+                    <div class="pract">
+                        <h1>ninja</h1>
+                        <p class="noun">noun</p>
+                        <div>
+                            <p>Plural: <em>ninjas</em></p>
+                            <p><button onclick="message()" class="likebtn">Likes</button></p>
+                            <h1 id="count">0</h1>
+                        </div>
+
+                        <div>
+                            <p>Plural: <em>Dislike Button</em></p>
+                            <p><button onclick="Cookies()" class="likebtn">Likes</button></p>
+                            <h1 id="numbers">0</h1>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
