@@ -46,7 +46,7 @@ class solution:
                 #Every string has same character at index of i, if they are equal continue if not return
                 #First part if out of bounds return
                 # Second conditional if in bound
-                if i ==len(s)  or s[i] != strs[0]:
+                if i ==len(s)  or s[i] != strs[0][i]:
                     return res
             #If string is out of bounds
             

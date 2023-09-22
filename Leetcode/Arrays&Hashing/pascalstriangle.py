@@ -80,3 +80,29 @@ class Solution:
 #             ans.append(row)
 #         # after all rows have been computed, return the ans list which now contains the first numRows rows of Pascal's Triangle
 #         return ans
+
+#Solution 3
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
+        #Every row, wih 1 value base case
+        result = [[1]]
+        
+        #Build up all other rows, minus 1 as we made 1 row from above
+        for i in range(numRows -1):
+                
+                #Build new array or list, using a zero at start and end
+                temp = [0] + result[-1] + [0]
+                #Empty row for new array
+                row = []
+                
+                #Build next row, length of prev row + 1 (from result the last row)
+                for j in range(len(result[-1]) + 1):
+                    
+                    #Track 2 pointers j and j+1, append to the row the temp etc
+                    #First 2 values then shift by 1
+                    row.append(temp[j] + temp[j +1])
+                    
+                #Append to entire row
+                result.append(row)
+                
+        return result
